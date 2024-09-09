@@ -19,7 +19,7 @@ class Game:
 
     def run(self):
         while self._running:
-            self._events.update()
+            self._events.update(self)
             pygame.display.update()
             self._clock.tick(self._target_framerate)
 
